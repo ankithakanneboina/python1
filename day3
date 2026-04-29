@@ -98,3 +98,17 @@ while True:
         h=1
         s=0
         m=0
+
+
+#datetime using timezones
+
+
+from datetime import datetime
+
+import pytz
+
+a=pytz.timezone("Asia/calcutta")
+b=datetime.now(a)
+print(b)
+for i in pytz.all_timezones:
+    print(i)
