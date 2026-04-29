@@ -4,6 +4,17 @@
         print("{:02d}".format(i*j),end=" ")
     print()
 
+
+    
+#leetcode valid square
+n=25
+a=n**0.5
+if n==a*a:
+    print("t")
+else:
+    print("f")
+
+
   
 #string operations
 a="p"
@@ -34,3 +45,27 @@ print(c)
 a="frhjegfhbhjrbejhfsbfsbfj"
 b=sorted(a, reverse=True)
 print(b)
+
+#password real time application
+
+a=input("Enter your password:")
+sm=0
+up=0
+dg=0
+sp=0
+if len(a)>7:
+    for i in a:
+        if i.isupper():
+            up+=1
+        elif i.islower():
+            sm+=1
+        elif i.isdigit():
+            dg+=1
+        else:
+            sp+=1
+    if up>0 and sm>0 and dg>0 and sp>0:
+        print("strong")
+    else:
+        print("weak")
+else:
+    print("weak due to low length of password:",a)
