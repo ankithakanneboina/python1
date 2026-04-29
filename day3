@@ -93,3 +93,98 @@ while True:
         h=1
         s=0
         m=0
+#table format
+  for i in range(1,11):
+    for j in range(1,11):
+        print("{:02d}".format(i*j),end=" ")
+    print()
+
+
+    
+#leetcode valid square
+n=25
+a=n**0.5
+if n==a*a:
+    print("t")
+else:
+    print("f")
+
+
+  
+#string operations
+a="p"
+b=a.upper()
+print(b)
+print(a.lower())
+print(a.capitalize())
+print(a.title())
+print(a.find("loved"))
+print(a.swapcase())
+b=a.isupper()
+print(b)
+
+a="I"
+d=a.isdigit()
+e=a.isalpha()
+f=a.isalnum()
+print(d)
+print(e)
+print(f)
+
+a="TVK is goood"
+b=a.split()
+print(b)
+c="".join(i for i in a if i in "AEIOU")
+print(c)
+
+a="frhjegfhbhjrbejhfsbfsbfj"
+b=sorted(a, reverse=True)
+print(b)
+
+#password real time application
+
+a=input("Enter your password:")
+sm=0
+up=0
+dg=0
+sp=0
+if len(a)>7:
+    for i in a:
+        if i.isupper():
+            up+=1
+        elif i.islower():
+            sm+=1
+        elif i.isdigit():
+            dg+=1
+        else:
+            sp+=1
+    if up>0 and sm>0 and dg>0 and sp>0:
+        print("strong")
+    else:
+        print("weak")
+else:
+    print("weak due to low length of password:",a
+
+#time and system imports
+
+import time
+import sys
+h=3
+m=40
+s=0
+while True:
+    sys.stdout.write("\r{:02d} : {:02d} : {:02d}".format(h,m,s))
+    sys.stdout.flush()
+    time.sleep(1)
+    s+=1
+    if s==60:
+        s=0
+        m=m+1
+    if m==60:
+        m=0
+        s=0
+        h=h+1
+    if h==13:
+        h=1
+        s=0
+        m=0
