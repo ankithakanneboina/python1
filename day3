@@ -1,0 +1,36 @@
+#table format
+  for i in range(1,11):
+    for j in range(1,11):
+        print("{:02d}".format(i*j),end=" ")
+    print()
+
+  
+#string operations
+a="p"
+b=a.upper()
+print(b)
+print(a.lower())
+print(a.capitalize())
+print(a.title())
+print(a.find("loved"))
+print(a.swapcase())
+b=a.isupper()
+print(b)
+
+a="I"
+d=a.isdigit()
+e=a.isalpha()
+f=a.isalnum()
+print(d)
+print(e)
+print(f)
+
+a="TVK is goood"
+b=a.split()
+print(b)
+c="".join(i for i in a if i in "AEIOU")
+print(c)
+
+a="frhjegfhbhjrbejhfsbfsbfj"
+b=sorted(a, reverse=True)
+print(b)
