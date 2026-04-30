@@ -31,3 +31,15 @@ for i in range(5):
     else:
         g="A"
     print("{}.Mr/Ms {} has scored {}% - {} Grade".format(i+1,names[i].title(),s,g))
+
+
+#we are using zip to sort the tuples values in order wise like dictionary
+names=["raM","RAJ","rose","jack","pavi"]
+age=[34,21,67,37,12]
+res1=zip(age,names)
+res=sorted(res1)
+print(res)
+pos=1
+for i in res:
+    print("Rank {}:{} age is {} yrs old".format(pos,i[1],i[0]))
+    pos+=1
