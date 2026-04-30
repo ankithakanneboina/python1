@@ -1,0 +1,33 @@
+a=[12,13,4,23,32]
+b=sorted(a)
+print(a)
+
+a=[chr(i) for i in range(65,91) if chr(i) not in  "AEIOU"]
+print(a)
+
+a=6789
+b=[int(i) for i in str(a)]
+print(max(b))
+
+names=["AA","BB","CC","DD","EE"]
+marks=[78,23,56,23,56]
+pos=1
+for i in range(5):
+    if marks[i]>40:
+        print("{}.{} has scored ()%".format(pos,names[i],marks[i]))
+        pos=pos+1
+
+
+names=["raM","RAJ","rose","JacK","Pavi"]
+marks=[[45,23,45],[34,57,86],[89,45,90],[57,97,35],[66,75,34]]
+for i in range(5):
+    s=sum(marks[i])//3
+    if s>80:
+        g="S"
+    elif s<40:
+        g="F"
+    elif s<40 and s<60:
+        g="B"
+    else:
+        g="A"
+    print("{}.Mr/Ms {} has scored {}% - {} Grade".format(i+1,names[i].title(),s,g))
