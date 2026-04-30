@@ -48,3 +48,27 @@ pos=1
 for i in res:
     print("Rank {}:{} age is {} yrs old".format(pos,i[1],i[0]))
     pos+=1
+
+
+import random
+print("-----------setting cricket match between ipl teams-------------------")
+
+a=int(input("enter num of teams:"))
+teams=[]
+print("---------------------Enter all team name----------------------")
+for i in range(a):
+    t=input("enter team name:")
+    teams.append(t)  
+m=int(input("enter no of meet bw teams:"))
+matches=[]
+for i in range(a-1):
+    for j in range(i+1,a):
+        for k in range(m):
+            matches.append([teams[i],teams[j]])
+        
+print(matches)
+pos=1
+random.shuffle(matches)
+for i in matches:
+    print("MATCH {} :{} vs {} ".format(pos,i[0],i[1]))
+    pos+=1
