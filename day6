@@ -7,3 +7,60 @@ for i in range(2,5):
         print(str(a),end=" ")
     print()
 print(a)
+
+
+
+Functions:
+    block of code
+    inbuilt  fns,user def fns
+    Adv:
+    1)code reuse
+    2)readability
+    3)integration
+types:
+    1)without r and without A
+    2)without r and with A
+    3)with a and without r
+    4)with a and with r
+
+
+
+def fun():
+    s=int(input("entr your side"))
+    a=s*s
+    return a
+def rect(l,b):
+    
+    return l*b
+def cir():
+    r=int(input("entr radius"))
+    return 3.14*r*r
+def tri(b,h):
+    return 0.5*b*h
+l=[]
+while True:
+    print("1.sq")
+    print("2.rec")
+    print("3.cir")
+    print("4.tria")
+    print("5.exit")
+
+    a=int(input("enter ur choice"))
+
+    if a==1:
+        print("area of aq",fun())
+    elif a==2:
+        l=int(input("enter lenght"))
+        b=int(input("enter bre"))
+        print("area of rectangle:",rect(l,b))
+    elif a==3:
+        x=cir()
+        print("area of circle",x)
+    elif a==4:
+        b=int(input("enter base:"))
+        h=int(input("enter h8:"))
+        y=tri(b,h)
+        print("area of trianglr",y)
+    elif a>4:
+        print("over")
+        break
