@@ -64,3 +64,30 @@ while True:
     elif a>4:
         print("over")
         break
+
+
+
+
+#3 condns should be there 1)prime or not 2)single digits should be prime 3)sum of digits should be prime
+def prime(n):
+    if n<=1:
+        return False
+    else:
+        for i in range(2,n):
+            if n%i==0:
+                return False
+        return True
+def sod(n):
+    d=[int(i) for i in str(n)]
+    return sum(d)
+def every(n):
+    
+    for i in range(3):
+        r=n%10
+        n//=10
+        if not prime(r):
+            return False
+    return True
+for i in range(100,1000):
+    if prime(i) and prime(sod(i)) and every(i):
+        print(i,end=" ")
