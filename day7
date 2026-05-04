@@ -65,5 +65,15 @@ qr.make(fit=True)
 
 res = qr.make_image(fill_color="black", back_color="white")
 res.save("ak.png")
-
 print("created")
+#oops
+oops
+1)var(4)
+2)class:container(method&obj)
+3)obj:member of class
+----------------------------------
+1)local var(has scope only in particular method)
+2)instance (global)-(every obj holds unique values)
+3)class var (global)-(every obj holds same value)
+4)complete global
+inside and outside the clss methods and variables should be invoked by object or class
