@@ -12,3 +12,18 @@ for i in range(len(x)):
     
 print(res)
 o/p:A3C2D3A2D1
+
+
+# Recuresion:
+#     fns calling itself 
+#     base cond -> exit of fns
+#     arg:should be diff
+#     backtracking
+#     nested recursion (more than 1 recursive call)
+#     top down approach 
+def fact(m):
+    if m<=0:
+        return 1
+    else:
+        return m*fact(m-1)
+print(fact(6))
