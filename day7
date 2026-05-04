@@ -44,3 +44,13 @@ def raju(a):
     raju(a)
 raju(2)")
 flower(1)
+#codesnippet
+
+def raju(a):
+    if a==5:
+        return 1
+    b=raju(a+1)
+    print("hai")
+    return b+2
+res=raju(1)
+print(res)
