@@ -1,0 +1,14 @@
+#leetcode problem
+x="AAACCDDDAAD"
+res=""
+c=1
+for i in range(len(x)):
+    if i+1<len(x) and x[i]==x[i+1]:
+        c+=1
+    else:
+        res+=x[i]
+        res+=str(c)
+        c=1
+    
+print(res)
+o/p:A3C2D3A2D1
