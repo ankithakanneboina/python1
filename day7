@@ -54,3 +54,16 @@ def raju(a):
     return b+2
 res=raju(1)
 print(res)
+#qrcode 
+import qrcode
+
+qr = qrcode.QRCode()
+
+a = "hmph!"
+qr.add_data(a)
+qr.make(fit=True)
+
+res = qr.make_image(fill_color="black", back_color="white")
+res.save("ak.png")
+
+print("created")
