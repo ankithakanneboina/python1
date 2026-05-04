@@ -35,7 +35,6 @@ def flower(a):
     flower(a+1) 
     print(a,end="
 #code snippet
-
 def raju(a):
     if a==1:
         return 
