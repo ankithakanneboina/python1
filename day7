@@ -27,3 +27,11 @@ def fact(m):
     else:
         return m*fact(m-1)
 print(fact(6))
+#backtracking
+def flower(a):
+    if a==4:
+        return 
+    print(a+10,end=" ")
+    flower(a+1) 
+    print(a,end=" ")
+flower(1)
