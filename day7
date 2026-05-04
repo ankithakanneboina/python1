@@ -77,3 +77,16 @@ oops
 3)class var (global)-(every obj holds same value)
 4)complete global
 inside and outside the clss methods and variables should be invoked by object or class
+#oops pgm
+class abc:
+    num=100
+    def set_dim(self,a,b):
+        self.total=a+b+self.num or abc.num
+    def display(self):
+        print("Addition is",self.total)
+a=abc()
+b=abc()
+a.set_dim(50,30)
+b.set_dim(10,30)
+a.display()
+b.display()
