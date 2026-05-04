@@ -88,5 +88,30 @@ a=abc()
 b=abc()
 a.set_dim(50,30)
 b.set_dim(10,30)
+a.#code snippets
+x="india"
+class abc:
+    num=100
+    def set_dim(self,a,b,c,d):
+        self.tot=a+b+c
+        self.name=d
+    def display(self):
+        print("1,name is",self.name)
+        print("2.mark=",self.tot)
+        print("3.country",x)
+class abcd:
+    num=100
+    def set_dim(self,a,b,c,d):
+        self.tot=a+b+c
+        self.name=d
+    def display(self):
+        print("1,name is",self.name)
+        print("2.mark=",self.tot)
+        print("3.country",x)
+a=abc()
+b=abcd()
+a.set_dim(50,30,30,"vijay")
+b.set_dim(10,30,32,"pavi")
 a.display()
+b.display()
 b.display()
