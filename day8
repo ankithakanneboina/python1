@@ -31,3 +31,17 @@ r1=Rect(20,30)
 r2=Rect(90,40)
 r2.display()
 r1.display()
+#constructor for area of circle
+class circle:
+    def __init__(self):
+        x=int(input("enter radius"))
+        self.r=x
+    def display(self):
+        print("Area is:",3.14*self.r**2)
+a=int(input("enter no of circle:"))
+l=[]
+for i in range(a):
+    c=circle()
+    l.append(c)
+    c.display()
+    print("____________________________________")
