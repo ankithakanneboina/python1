@@ -21,4 +21,13 @@ for i in range(2, n+1):
 
 for i in ans:
     print(i,end=" ")
-    
+#constructor
+class Rect:
+    def __init__(self,a,b):
+        self.area=a*b
+    def display(self):
+        print("area is",self.area)
+r1=Rect(20,30)
+r2=Rect(90,40)
+r2.display()
+r1.display()
