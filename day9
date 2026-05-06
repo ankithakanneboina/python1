@@ -1,5 +1,6 @@
 a="hi"*2
 print(a)
+
 #dict creating
 b=122333333333335
 d={}
@@ -13,6 +14,7 @@ b={'A':2,'B':3,'C':3}
 A1=[i for i in b.keys()]
 B=[i[1] for i in b.items()]
 print(A1,B)
+
 #operations
 print(11<<2)
 print(13&5)
@@ -24,12 +26,14 @@ def abc(*args):
     print(s)
 abc(20,30)
 abc(10,24,66,78,46)
+
 #default arguments
 def ace(name="akshaya "):
       print(name)
 ace(parthi)
 ace(kavi)
 ace()
+
 #keyword areguments
 def a(**kwargs):
     print(kwargs)
