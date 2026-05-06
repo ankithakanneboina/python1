@@ -46,7 +46,7 @@ a=input("enter any word")
 b=input("enter any target lang")
 res=t.translate(a,des=b)
 print(res.text)
-#leetcode
+#leetcode problem linkedlist cycle-1 141
 slow=head
 fast=head
 while fast and fast.next:
