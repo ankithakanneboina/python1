@@ -30,3 +30,8 @@ def ace(name="akshaya "):
 ace(parthi)
 ace(kavi)
 ace()
+#keyword areguments
+def a(**kwargs):
+    print(kwargs)
+a(name="gill",score=40)
+o/p:{'name': 'gill', 'score': 40}
