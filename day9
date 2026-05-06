@@ -39,3 +39,10 @@ def a(**kwargs):
     print(kwargs)
 a(name="gill",score=40)
 o/p:{'name': 'gill', 'score': 40}
+
+#from googletrans import Translator
+t=Ttanslator()
+a=input("enter any word")
+b=input("enter any target lang")
+res=t.translate(a,des=b)
+print(res.text)
