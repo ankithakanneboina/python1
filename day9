@@ -46,3 +46,13 @@ a=input("enter any word")
 b=input("enter any target lang")
 res=t.translate(a,des=b)
 print(res.text)
+#leetcode
+slow=head
+fast=head
+while fast and fast.next:
+slow=slow.next
+fast=fast.next.next
+if slow ==fast:
+    return True
+return False
+
