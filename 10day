@@ -67,3 +67,16 @@ pre-order="MLR"
 post-order="LRM"
 in-order="LRM"
 Level order-level by level
+#min heap tree
+import heapq
+a=[10,12,23,45,67,89,7,90]
+res=[]
+heapq.heappush(res,10)
+heapq.heappush(res,12)
+heapq.heappush(res,23)
+heapq.heappush(res,45)
+heapq.heappush(res,67)
+heapq.heappush(res,89)
+heapq.heappush(res,7)
+heapq.heappush(res,90)
+print(res)
