@@ -33,3 +33,6 @@ a.close()
 a="lahai"
 l="1".join(a)
 print(l)
+a=[1,2,3,4,5]
+b="".join(str(i) for i in a)
+print(b)
