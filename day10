@@ -12,3 +12,13 @@ title=["name","age","dept"]
 data=[["anki","21","CSE"],["aksh","19","AIML"],["pras","20","it"],["bindu","16","ECE"]]
 res=tabulate(data,headers=title,tablefmt="pretty")
 print(res)
+#file handling
+a=again("tvk.txt","w")
+n1=int(input("enter any num1:"))
+n2=int(input("enter any num2:"))
+s=n1+n2
+a.write(str(n1)+"\n")
+a.write(str(n2))+"\n")
+a.write(str(s)+"\n")
+print("ok")
+a.close()
