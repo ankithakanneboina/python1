@@ -62,3 +62,8 @@ s.display()
 s.pop()
 s.display()
 s.peek()
+#concept of trees
+pre-order="MLR"
+post-order="LRM"
+in-order="LRM"
+Level order-level by level
