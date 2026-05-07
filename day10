@@ -22,3 +22,10 @@ a.write(str(n2))+"\n")
 a.write(str(s)+"\n")
 print("ok")
 a.close()
+#wont work in online compilers
+a=open("anki.txt","r")
+c=a.readlines()
+while c:
+    print(c)
+    c=a.readlines()
+a.close()
