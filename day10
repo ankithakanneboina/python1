@@ -29,3 +29,7 @@ while c:
     print(c)
     c=a.readlines()
 a.close()
+#join revision
+a="lahai"
+l="1".join(a)
+print(l)
