@@ -41,3 +41,24 @@ a=[1,2,3,4,5]
 b="".join(map(str,a))
 # b="".join(str(i) for i in a)
 print(b)
+#stack implementation
+class Stack:
+    def __init__(self):
+        self.l=[]
+    def push(self,a):
+        self.l.append(a)
+    def pop(self):
+        self.l.pop()
+    def display(self):
+        b="->".join(map(str,self.l))
+        print(b)
+    def peek(self):
+        print(self.l[-1])
+s=Stack()
+s.push(100)
+s.push(200)
+s.push(300)
+s.display()
+s.pop()
+s.display()
+s.peek()
