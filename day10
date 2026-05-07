@@ -5,6 +5,7 @@ print(res)#30.0
 from scipy import stats
 a=[10,20,30,40,50,60]
 res=stats.percentileofscore(a,59)#83.33333333333333
+
 #table format output
 from tabulate import tabulate
 title=["name","age","dept"]
