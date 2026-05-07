@@ -36,3 +36,8 @@ print(l)
 a=[1,2,3,4,5]
 b="".join(str(i) for i in a)
 print(b)
+#join with map
+a=[1,2,3,4,5]
+b="".join(map(str,a))
+# b="".join(str(i) for i in a)
+print(b)
